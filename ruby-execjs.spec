@@ -13,8 +13,6 @@ BuildRequires:	rpmbuild(macros) >= 1.656
 %if %(locale -a | grep -q '^en_US$'; echo $?)
 BuildRequires:	glibc-localedb-all
 %endif
-Requires:	ruby-railties
-Requires:	ruby-coffee-script >= 2.2.0 
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
