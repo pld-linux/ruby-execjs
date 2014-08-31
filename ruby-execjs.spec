@@ -13,6 +13,7 @@ BuildRequires:	rpmbuild(macros) >= 1.656
 %if %(locale -a | grep -q '^en_US$'; echo $?)
 BuildRequires:	glibc-localedb-all
 %endif
+Requires:	JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
